@@ -1,6 +1,3 @@
-# for loop 
-# Range Function -> range(start, stop+1, step) default (0,stop+1, 1)
-
 
 # for i in range(5):
 #     print(i)
@@ -18,11 +15,3 @@
 
 # for i in a:
 #     print(i)
-
-
-for i in range(10, 0, -1):
-    print(i)
-
-
-    
-
