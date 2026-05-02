@@ -30,10 +30,28 @@
 #     print(list3[i], end=" ")
 # print("\n")
 
-a=['a',2,True,print(),len]
-print(a)
+# a=['a',2,True,print(),len]
+# print(a)
 
-# List has same slicing and indexing as strig 
-print(a[0:5:1])  # a 2 True <built-in function print> <built-in function len>
-print(a[0:5:2])  # a True <built-in function len>
-print(a[1:5:2])  # 2 <built-in function print>
+# # List has same slicing and indexing as strig 
+# print(a[0:5:1])  # a 2 True <built-in function print> <built-in function len>
+# print(a[0:5:2])  # a True <built-in function len>
+# print(a[1:5:2])  # 2 <built-in function print>
+
+
+# all important list methods 
+
+list1= [1, 2, 3, 4, 5]
+# list1.append(6)  # adds an element at the end of the list
+# print(list1)
+# list1.insert(0, 0)  # adds an element at the specified index
+# print(list1)
+# list1.remove(3)  # removes the first occurrence of the specified element
+# print(list1)
+# list1.pop()  # removes and returns the last element of the list
+# print(list1)
+# list1.pop(0)  # removes and returns the element at the specified index
+# print(list1)
+# list1.clear()  # removes all the elements from the list
+# print(list1)
+
