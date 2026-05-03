@@ -55,3 +55,5 @@ list1= [1, 2, 3, 4, 5]
 # list1.clear()  # removes all the elements from the list
 # print(list1)
 
+
+
