@@ -21,7 +21,7 @@ dict1={"name":"Abhishek", "age":23, 23:"Age"}
 # dict1["name"]= "Abhi" # updates the value of the key "name" to "Abhi"
 # print(dict1)
 
-# # keys can be deleted but can notbe changed because keys are immutable but values can be changed because they are mutable.
+# # keys can be deleted but can not be changed because keys are immutable but values can be changed because they are mutable.
 # dict1["class"]="python" # adds a new key-value pair to the dictionary
 # print(dict1)
 
@@ -82,6 +82,7 @@ dict1={"name":"Abhishek", "age":23, 23:"Age"}
 
 # d1={10:20, 30:40}
 # d2={50:60, 70:80}
+
 
 # marge the two dictionary we can do this by using update() method also 
 # for i in d2:
