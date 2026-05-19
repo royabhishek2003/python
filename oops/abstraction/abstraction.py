@@ -42,4 +42,5 @@ obj= child()
 print(obj.square(5)) # 25 
 print(obj.perimeter(5,10)) # 30  
    
-# yaha koi bhi child class jo abstract class ko inherit kar rha hai usko sare abstract methd ko define karna padega having a same number of parameter as defined in the abstract class otherwise wo class bhi abstract class ban jayegi aur uska object nahi ban sakta hai.
+# yaha koi bhi child class jo abstract class ko inherit kar rha hai usko sare abstract methd ko define karna padega having a same number of parameter as defined in the abstract class otherwise wo class bhi abstract class ban jayegi
+# aur uska object nahi ban sakta hai.

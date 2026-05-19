@@ -1,5 +1,5 @@
 # Encapulation => Encapsulation means putting data and methds together in a single  unit caleed class and 
-# hiding the data from ourside the world and only providing access to the data through methods of the class.
+# hiding the data from outside the world and only providing access to the data through methods of the class.
 # it is one of the fundamental concepts of object oriented programming and it is used to achieve data hiding and abstraction in python. 
 # it is achieved by using private and protected access modifiers in python.
 
@@ -31,14 +31,14 @@
 
 # Private attribute => it can not be accessed outside the class and it can not be inherited by the child class.
 
-# class A:
-#     __a=10    #private attribute 
-#     def __show(self): # private method 
-#         print(f"This is a private method")
+class A:
+    __a=10    #private attribute 
+    def __show(self): # private method 
+        print(f"This is a private method")
 
-# obj= A()
-# print(obj.__a)
-# #  __a -> isko na aap bahar se acees kar sakte ho na hi change kar sakte ho 
+obj= A()
+print(obj.__a)
+#  __a -> isko na aap bahar se acees kar sakte ho na hi change kar sakte ho 
 
 
 # class demo:
