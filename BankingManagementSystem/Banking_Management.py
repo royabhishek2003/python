@@ -87,6 +87,52 @@ class Bank:
                 return
             else:
                 print("Invalid account number or pin")
+    def check_details(self):
+        account_number = input("Enter your account number: ")
+        pin = int(input("Enter your pin: "))
+        for i in Bank.data:
+            if i['account_number'] == account_number and i['pin'] == pin:
+                print(f"Your account details are: {i}")
+                return
+            else:
+                print("Invalid account number or pin")
+    
+    def edit_details(self):
+        account_number = input("Enter your account number: ")
+        pin = int(input("Enter your pin: "))
+        for i in Bank.data:
+            if i['account_number'] == account_number and i['pin'] == pin:
+                print("Enter the details you want to edit: ")
+                print("1. Name")
+                print("2. Age")
+                print("3. Email")
+                choice = int(input("Enter your choice: "))
+                if choice == 1:
+                    i['name'] = input("Enter your new name: ")
+                elif choice == 2:
+                    i['age'] = int(input("Enter your new age: "))
+                elif choice == 3:
+                    i['email'] = input("Enter your new email: ")
+                else:
+                    print("Invalid choice")
+                    return
+                print(f"Details updated successfully. Your new details are: {i}")
+                Bank.update_database(Bank.data)
+                return
+            else:
+                print("Invalid account number or pin")
+    
+    def delete_account(self):
+        account_number = input("Enter your account number: ")
+        pin = int(input("Enter your pin: "))
+        for i in Bank.data:
+            if i['account_number'] == account_number and i['pin'] == pin:
+                Bank.data.remove(i)
+                print("Account deleted successfully")
+                Bank.update_database(Bank.data)
+                return
+            else:
+                print("Invalid account number or pin")
         
     
         
@@ -107,5 +153,12 @@ if check ==2:
     user.deposit()
 if check ==3:
     user.withdraw()
+if check ==4:
+    user.check_details()
+if check ==5:
+    user.edit_details()
+if check ==6:
+    user.delete_account()
+    
 
     
