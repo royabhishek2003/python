@@ -24,6 +24,10 @@
 # print(iseven(5)) # False
 
 
+findmax= lambda a,b: a if a>b else b
+print(findmax(5,10)) # 10
+
+
 # Map function is used to apply a function to all the items in an iterable object.
 
 # Map(function,iterables)

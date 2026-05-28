@@ -135,8 +135,6 @@ class Bank:
                 print("Invalid account number or pin")
         
     
-        
-
 user = Bank()
 print("Enter 1 for creating the account")
 print("Enter 2 for depositing the money")
@@ -159,6 +157,6 @@ if check ==5:
     user.edit_details()
 if check ==6:
     user.delete_account()
-    
+
 
     
