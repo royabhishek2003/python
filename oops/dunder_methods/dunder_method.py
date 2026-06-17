@@ -31,7 +31,8 @@ class Animal:
         self.age = age
 
     def __str__(self):
-        return f"Animal name is {self.name} and age is {self.age}"
+        return f"Animal name is {self.name} and age is {self.age}" 
+    
 
     def __add__(self, other):
         
