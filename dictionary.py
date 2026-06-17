@@ -56,8 +56,10 @@ dict1={"name":"Abhishek", "age":23, 23:"Age"}
 # c=a.copy() # Shallow copy → outer list copied, inner lists still shared
 # d= a[:] # Shallow copy → outer list copied, inner lists still shared
 # e= list(a) # Shallow copy → outer list copied, inner lists still shared
-# f= copy.deepcopy(dict1) # Deep copy → entire structure copied, no shared references
+f= copy.deepcopy(dict1) # Deep copy → entire structure copied, no shared references
 
+f['name']="Abhi"
+print(dict1) # {'name': 'Abhishek', 'age': 23, 23: 'Age'}
 # # cloning in dictionary
 
 # dict2=dict1 # this is not a clone, this is just a reference to the same dictionary. if we change dict1 then dict2 will also change because both dict1 and dict2 are pointing to the same dictionary in memory.
@@ -67,7 +69,7 @@ dict1={"name":"Abhishek", "age":23, 23:"Age"}
 
 # Methods of dictionary 
 
-dict1={"name":"Abhishek", "age":23, 23:"Age"}
+# dict1={"name":"Abhishek", "age":23, 23:"Age"}
 # dict1.clear() # removes all the key-value pairs from the dictionary
 # print(dict1)
 # dict1.pop("name") # removes the key-value pair with the specified key and returns the value
@@ -107,17 +109,17 @@ dict1={"name":"Abhishek", "age":23, 23:"Age"}
 
 # write program to merge two dictionaries and add the values of common keys
 
-d1={10:20, 30:40, 50:60}
-d2={50:60, 70:80}
+# d1={10:20, 30:40, 50:60}
+# d2={50:60, 70:80}
 
 
-for key in d2:
-    if key in d1:
-        d1[key]+=d2[key]
-    else:
-        d1[key]=d2[key]
+# for key in d2:
+#     if key in d1:
+#         d1[key]+=d2[key]
+#     else:
+#         d1[key]=d2[key]
 
-print(d1)
+# print(d1)
 
 
 
