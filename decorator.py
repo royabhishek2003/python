@@ -82,7 +82,7 @@
 #         sum+=i
 #     for i in kargs.values():
 #         sum+=i
-#     print(f"The sum of {arg} and {kargs} is {sum}")
+#     print(f"The sum of {arg} and {kargs} is {sum}  ")
     
 # addition(5,10,15,a=20,b=25) # The sum of (5, 10, 15) and {'a': 20, 'b': 25} is 75
     
